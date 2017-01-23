@@ -1,1 +1,1 @@
-asldfsdlfsdlkf
+angular.module('app', []);
