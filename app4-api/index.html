@@ -2,14 +2,19 @@
 	<body ng-controller="ctrl">
 		{{test}}
 		<div>
-			{{name.name}}
-			<ul ng-repeat="w in work" >
+
+
+			<div>
+				{{name.name}}
+				<ul ng-repeat="w in work" >
+
 				<li>
 
 					{{w.ability.name}}
-
 				</li>
-			</ul>
+					</ul>
+			</div>
+
 		</div>
 
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
