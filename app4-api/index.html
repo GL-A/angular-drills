@@ -1,6 +1,17 @@
 <html ng-app="apiApp">
-	<body>
-		
+	<body ng-controller="ctrl">
+		{{test}}
+		<div>
+			<ul ng-repeat="p in poke">
+				<li>
+					{{p.name}}
+				</li>
+			</ul>
+		</div>
+
+
+
+
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

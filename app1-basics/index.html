@@ -1,6 +1,14 @@
-<html>
-	<body>
-	
+<html ng-app="app">
+	<body ng-controller="ctrl">
+
+		<input type='text' placeholder="ss" ng-model="text" />
+		<input type='text' placeholder="ss" ng-model="test" />
+
+	<p>
+		{{test}}
+		{{text}}
+	</p>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

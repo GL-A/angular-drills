@@ -1,6 +1,30 @@
-<html>
-	<body>
-		Something
+<html ng-app='app'>
+	<body ng-controller='ctrl'>
+		<div>
+			<input type="text" ng-model="datFilter.name" placeholder="Name here" />
+			<input type="text" ng-model="datFilter.email" placeholder="Email here" />
+			<input type="text" ng-model="datFilter.dateEmployed" placeholder="Date Employed" />
+			<input type="text" ng-model="datFilter.phone" placeholder="Phone here" />
+
+			<select ng-model="order" ng-options="sort.value as sort.name for sort in obj"></select>
+			<select ng-model="upDown" ng-options="sort.value as sort.name for sort in objDir"></select>
+
+
+			<ul ng-repeat="dat in data | filter: datFilter | orderBy: upDown + order ">
+				<li>
+					{{dat.name}}
+				</li>
+				<li>
+					{{dat.email}}
+				</li>
+				<li>
+					{{dat.dateEmployed}}
+				</li>
+				<li>
+					{{dat.phone}}
+				</li>
+			</ul>
+		</div>
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
