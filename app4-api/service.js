@@ -4,7 +4,7 @@ angular.module('apiApp').service('service', function($http){
   this.poke = function(){
     return $http({
       method: 'GET',
-      url: 'http://pokeapi.co/api/v2/pokemon/'
+      url: 'http://swapi.co/api/people/'
     }).then(function(response){
       console.log(response);
       return response;
