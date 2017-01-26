@@ -3,7 +3,7 @@ angular.module('app').directive('dirImg', function(){
     restrict: 'E',
     templateUrl: 'dirImg.html',
     scope: {
-      urlAny: '@str'
+      urlAny: '@any'
     }
   }
 })
